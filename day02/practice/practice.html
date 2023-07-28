@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/practice.css">
+</head>
+<body>
+  <div id="wrap">
+    <h1>여름방학 특강 신청</h1>
+    <form action="submit" id="frm">
+      <fieldset>
+        <legend>수강 신청인</legend>
+        <ul>
+          <li>
+            <label for="student_id">학번</label>
+            <input type="text" name="student_id" id="student_id">
+            <label for="name">이름</label>
+            <input type="text" name="name" id="name">
+          </li>
+          <li>
+            <label for="major">학과</label>
+            <select name="major" id="major">
+              <option value="major_1">건축공학과</option>
+              <option value="major_2">화공생명공학과</option>
+              <option value="major_3">전기전자공학과</option>
+            </select>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>수강 과목을 선택하세요</legend>
+        <ul>
+          <li>
+            <label class="field-name" for="color">선호색상</label>
+            <input type="color" name="color" id="color">
+          </li>
+          <li>
+            <label class="field-name">신청 과목(회화)</label>
+            <input type="radio" name="subject_1" id="subject_1_1">
+            <label for="subject_1_1">영어 회화(초급)</label>
+            <input type="radio" name="subject_1" id="subject_1_2">
+            <label for="subject_1_2">영어 회화(중급)</label>
+            <input type="radio" name="subject_1" id="subject_1_3">
+            <label for="subject_1_3">영어 회화(고급)</label>
+          </li>
+          <li>
+            <label class="field-name">신청 과목(자격)</label>
+            <input type="radio" name="subject_2" id="subject_2_1">
+            <label for="subject_2_1">TOEIC</label>
+            <input type="radio" name="subject_2" id="subject_2_2">
+            <label for="subject_2_2">TOEFL</label>
+            <input type="radio" name="subject_2" id="subject_2_3">
+            <label for="subject_2_3">OPIC</label>
+          </li>
+          <li>
+            <label class="field-name" for="interests">관심분야</label>
+            <input type="text" name="interests" id="interests">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>강의 시간을 선택하세요</legend>
+        <ul>
+          <li>
+            <label class="field-name" for="start_date">개강 주</label>
+            <!-- <input type="week" name="" id=""> -->
+            <input type="date" name="start_date" id="start_date">
+          </li>
+          <li>
+            <label class="field-name" for="lecture_time">강의 시간</label>
+            <!-- <input type="time" name="" id=""> -->
+            <input type="text" name="lecture_time" id="lecture_time">
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>

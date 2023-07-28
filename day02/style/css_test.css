@@ -1,0 +1,6 @@
+div {
+  background-color: darkblue;
+  border: 2px solid yellow;
+}
+
+@import url(./css_test2.css);

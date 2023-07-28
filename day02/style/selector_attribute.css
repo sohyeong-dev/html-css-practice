@@ -1,0 +1,47 @@
+div:not(.clear) {
+  width: 100px; height: 100px;
+  background: yellow;
+  border: 2px solid blue;
+  float: left;
+  margin-right: 10px;
+}
+
+/* title 이라는 속성을 갖고 있는 요소 모두 */
+div[title] {
+  color: brown;
+  font-size: 1.2rem;
+}
+
+/* 속성의 값이 여러 개가 있을 때 완전히 일치하는 요소만 선택 */
+div[title="h1 a3"] {
+  color: #E91E63;
+  font-size: 0.8rem;
+}
+
+/* 여러 개 속성 값 중에서 하나만 포함돼도 선택되는 요소 */
+div[title~="h1"] {
+  color: #9C27B0;
+}
+
+div.clear {
+  clear: both;
+}
+
+a {
+  display: inline-block;
+  width: 150px;
+}
+
+a[href$="com"] {
+  color: red;
+}
+
+a[href^="http"] {
+  border: 3px solid green;
+}
+
+a[href*="shinhan"] {
+  background-color: darkblue;
+  color: white;
+  font-size: 20px;
+}

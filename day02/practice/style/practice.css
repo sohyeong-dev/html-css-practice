@@ -1,0 +1,22 @@
+#wrap {
+  width: 50%;
+  margin: 0 auto;
+}
+
+fieldset {
+  margin: 2rem 0;
+}
+
+#frm li {
+  list-style-type: none;
+  margin: 1rem;
+}
+
+.field-name {
+  color: green;
+  font-weight: bold;
+  display: inline-block;
+  width: 15%;
+  text-align: right;
+  margin-right: 1rem;
+}

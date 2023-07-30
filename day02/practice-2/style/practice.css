@@ -1,0 +1,56 @@
+#wrap {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  opacity: 80%;
+  color: white;
+  overflow: hidden;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  float: right;
+  margin: 0;
+  width: 50%;
+}
+
+nav li, aside li {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 2rem;
+}
+
+nav li a {
+  color: white;
+}
+
+section, aside {
+  color: gray;
+  margin: 1rem 0 0 2rem;
+}
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: right;
+  width: 30%;
+}
+
+.hr {
+  clear: both;
+  background-color: gray;
+  height: 0.1rem;
+}
+
+.hr, footer {
+  margin-left: 2rem;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 전체 element 중에서 첫 번째 element 를 찾음 */
+    span:first-child {
+      border: 2px solid silver;
+    }
+
+    /* p tag 들 중에서 첫 번째 element 를 선택 */
+    p:first-of-type {
+      background: green;
+    }
+    
+    div:first-of-type {
+      background: greenyellow;
+    }
+
+    /* type 에 따라서 달라지는 게 아니라 전체 요소의 순서에 따라 달라짐 */
+    div:nth-child(2) {
+      background: yellow;
+    }
+
+    /* 짝수 요소를 선택 */
+    p:nth-child(2n) {
+      background: yellowgreen;
+    }
+
+    div:nth-child(3n+1) {
+      background-color: aliceblue;
+    }
+
+    p:nth-of-type(2n) {
+      background-color: antiquewhite;
+    }
+
+    .test {
+      /* 띄어쓰기를 기준으로 첫 번째에 대한 글자만 대문자로 표현 */
+      text-transform: capitalize;
+      text-decoration: line-through;
+      line-height: 100px;
+    }
+
+    .shadow {
+      color: red;
+      font-size: 20px;
+      /* offset-x, offset-y, blur, color */
+      text-shadow: 5px 5px 5px darkblue, 10px 10px 1px black, 20px 20px 20px yellow;
+    }
+
+    #tb {
+      width: 800px;
+      height: 400px;
+    }
+
+    #tb td {
+      border: 1px solid silver;
+      /* 가로 정렬 */
+      text-align: center;
+      /* 세로 정렬 */
+      vertical-align: bottom;
+    }
+  </style>
+</head>
+<body>
+  <!-- <p>p-1</p> -->
+  <div>div-1</div>
+  <p>p-1<span>test</span></p>
+  <div>div-2</div>
+  <p>p-2</p>
+  <div>div-3</div>
+  <p>p-3</p>
+  <div>div-4</div>
+  <p>p-4</p>
+
+  <div class="test">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum quod facere quas impedit nisi, ratione odio nihil, eius ipsam illo tempora ducimus dolorem iure cum consequuntur quis totam explicabo.
+  </div>
+
+  <div class="shadow">hello</div>
+
+  <table id="tb">
+    <tbody>
+      <tr><td>안녕하세요 ㅁㄴㅇㄹ </td></tr>
+    </tbody>
+  </table>
+</body>
+</html>

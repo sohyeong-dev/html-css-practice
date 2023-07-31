@@ -10,7 +10,7 @@
 <body>
   <div id="wrap">
     <h1>여름방학 특강 신청</h1>
-    <form action="submit" id="frm">
+    <form method="post" action="submit" id="frm">
       <fieldset>
         <legend>수강 신청인</legend>
         <ul>
@@ -39,20 +39,20 @@
           </li>
           <li>
             <label class="field-name">신청 과목(회화)</label>
-            <input type="radio" name="subject_1" id="subject_1_1">
+            <input type="radio" name="subject_1" id="subject_1_1" value="level1" checked>
             <label for="subject_1_1">영어 회화(초급)</label>
-            <input type="radio" name="subject_1" id="subject_1_2">
+            <input type="radio" name="subject_1" id="subject_1_2" value="level2">
             <label for="subject_1_2">영어 회화(중급)</label>
-            <input type="radio" name="subject_1" id="subject_1_3">
+            <input type="radio" name="subject_1" id="subject_1_3" value="level3">
             <label for="subject_1_3">영어 회화(고급)</label>
           </li>
           <li>
             <label class="field-name">신청 과목(자격)</label>
-            <input type="radio" name="subject_2" id="subject_2_1">
+            <input type="radio" name="subject_2" id="subject_2_1" value="toeic">
             <label for="subject_2_1">TOEIC</label>
-            <input type="radio" name="subject_2" id="subject_2_2">
+            <input type="radio" name="subject_2" id="subject_2_2" value="toefl">
             <label for="subject_2_2">TOEFL</label>
-            <input type="radio" name="subject_2" id="subject_2_3">
+            <input type="radio" name="subject_2" id="subject_2_3" value="opic">
             <label for="subject_2_3">OPIC</label>
           </li>
           <li>
@@ -76,6 +76,7 @@
           </li>
         </ul>
       </fieldset>
+      <button type="submit">전송</button>
     </form>
   </div>
 </body>

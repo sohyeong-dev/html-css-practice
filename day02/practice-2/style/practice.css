@@ -51,6 +51,6 @@ aside {
   height: 0.1rem;
 }
 
-.hr, footer {
+.hr, #wrap > footer {
   margin-left: 2rem;
 }

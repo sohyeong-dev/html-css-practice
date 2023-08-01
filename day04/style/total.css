@@ -1,0 +1,21 @@
+/* 각각의 재생 목록에 대해 작성 */
+/* 
+@media screen {
+  body {
+    background-color: silver;
+  }
+  
+  div {
+    border: 2px solid purple;
+  }
+}
+
+@media print {
+  div {
+    color: purple;
+  }
+} */
+
+@import url("./print.css") print;
+
+@import url("./screen.css") screen;

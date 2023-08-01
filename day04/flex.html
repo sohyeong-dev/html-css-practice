@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #test {
+      display: flex;
+      flex-direction: row;
+
+    }
+
+    .content {
+      border: 1px solid silver;
+      /* width: 300px; height: 400px; */
+      flex-grow: 2;
+    }
+
+    .content3 {
+      order: 1;
+      flex-grow: 1;
+    }
+
+    .content1 {
+      order: 3;
+      flex-shrink: 3;
+    }
+  </style>
+</head>
+<body>
+  <div id="test">
+    <div class="content content1">번호1</div>
+    <div class="content content2">번호2</div>
+    <div class="content content3">번호3</div>
+    <div class="content content4">번호4</div>
+  </div>
+</body>
+</html>

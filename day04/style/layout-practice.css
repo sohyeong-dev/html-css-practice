@@ -1,0 +1,57 @@
+#wrap {
+  width: 90vw;
+  margin: 0 auto;
+  border: 1px solid silver;
+}
+
+header, footer {
+  margin: 2vh 1vw;
+  padding: 1vh 1vw;
+  border: 1px solid silver;
+}
+
+main {
+  display: flex;
+  margin: 2vh 1vw;
+  justify-content: space-between;
+  gap: 1vw;
+}
+
+main > * {
+  border: 1px solid silver;
+  /* padding: 1vh 1vw; */
+  position: relative;
+}
+
+main aside {
+  flex-grow: 1;
+}
+
+main section {
+  flex-grow: 3;
+}
+
+main aside h3 {
+  position: relative;
+  left: 1vw;
+}
+
+main aside ul li {
+  list-style-type: none;
+}
+
+main aside ul li a {
+  display: inline-block;
+  padding: 0.8vh 0;
+  text-decoration: none;
+}
+
+main section h2 {
+  position: relative;
+  left: 3vw;
+}
+
+main section p {
+  position: relative;
+  left: 4vw;
+}
